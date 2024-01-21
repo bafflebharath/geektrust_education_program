@@ -1,0 +1,22 @@
+
+G	java:S106"+Replace this use of System.out by a logger.(Ñ´à½8Ç¤‰êÒ1
+G	java:S106"+Replace this use of System.out by a logger.(àåöà8Ì¤‰êÒ1
+G	java:S106-"+Replace this use of System.out by a logger.(‹ªó—8Ğ¤‰êÒ1
+^
+java:S1854I"ARemove this useless assignment to local variable "totalPrograms".(¡µ™†8Ñ¤‰êÒ1
+8
+java:S3626D"Remove this redundant jump.(ûÁİ…8Ñ¤‰êÒ1
+L	java:S1065"+Replace this use of System.out by a logger.(Ò¹×Œúÿÿÿÿ8Ò¤‰êÒ1
+L	java:S1066"+Replace this use of System.out by a logger.(ƒ¿Öšıÿÿÿÿ8Ò¤‰êÒ1
+L	java:S1067"+Replace this use of System.out by a logger.(ïé¥Îûÿÿÿÿ8Ó¤‰êÒ1
+G	java:S1068"+Replace this use of System.out by a logger.(û¥¢8Ó¤‰êÒ1
+L	java:S1069"+Replace this use of System.out by a logger.(ØáöÚıÿÿÿÿ8Ó¤‰êÒ1
+L	java:S106?"+Replace this use of System.out by a logger.(‹àğ€şÿÿÿÿ8Ô¤‰êÒ1
+G	java:S106F"+Replace this use of System.out by a logger.(µ†Äë8Ô¤‰êÒ1
+L	java:S106M"+Replace this use of System.out by a logger.(îŞôúüÿÿÿÿ8Õ¤‰êÒ1
+L	java:S106Y"+Replace this use of System.out by a logger.(³õ¯£ûÿÿÿÿ8Ø¤‰êÒ1
+G	java:S106["+Replace this use of System.out by a logger.(»Ñ¶8Ù¤‰êÒ1
+L	java:S106h"+Replace this use of System.out by a logger.(û¶Ôøÿÿÿÿ8Ú¤‰êÒ1
+G	java:S106n"+Replace this use of System.out by a logger.(ö¶ñÃ8Û¤‰êÒ1
+G	java:S106r"+Replace this use of System.out by a logger.(Ş”í8Û¤‰êÒ1
+G	java:S106s"+Replace this use of System.out by a logger.(Ø“ïû8Û¤‰êÒ1
