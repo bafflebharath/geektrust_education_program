@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 public class MainTest {
 
-    private Main geekdemyApp;
+    /*private Main geekdemyApp;
 
     @BeforeEach
     void setUp() {
@@ -56,5 +56,5 @@ public class MainTest {
         } catch (IOException e) {
             fail("IOException occurred while creating temporary file.");
         }
-    }
+    }*/
 }

@@ -1,22 +1,26 @@
 
-G	java:S106"+Replace this use of System.out by a logger.(Ñ´à½8Ç¤‰êÒ1
-G	java:S106"+Replace this use of System.out by a logger.(àåöà8Ì¤‰êÒ1
-G	java:S106-"+Replace this use of System.out by a logger.(‹ªó—8Ğ¤‰êÒ1
-^
-java:S1854I"ARemove this useless assignment to local variable "totalPrograms".(¡µ™†8Ñ¤‰êÒ1
-8
-java:S3626D"Remove this redundant jump.(ûÁİ…8Ñ¤‰êÒ1
-L	java:S1065"+Replace this use of System.out by a logger.(Ò¹×Œúÿÿÿÿ8Ò¤‰êÒ1
-L	java:S1066"+Replace this use of System.out by a logger.(ƒ¿Öšıÿÿÿÿ8Ò¤‰êÒ1
-L	java:S1067"+Replace this use of System.out by a logger.(ïé¥Îûÿÿÿÿ8Ó¤‰êÒ1
-G	java:S1068"+Replace this use of System.out by a logger.(û¥¢8Ó¤‰êÒ1
-L	java:S1069"+Replace this use of System.out by a logger.(ØáöÚıÿÿÿÿ8Ó¤‰êÒ1
-L	java:S106?"+Replace this use of System.out by a logger.(‹àğ€şÿÿÿÿ8Ô¤‰êÒ1
-G	java:S106F"+Replace this use of System.out by a logger.(µ†Äë8Ô¤‰êÒ1
-L	java:S106M"+Replace this use of System.out by a logger.(îŞôúüÿÿÿÿ8Õ¤‰êÒ1
-L	java:S106Y"+Replace this use of System.out by a logger.(³õ¯£ûÿÿÿÿ8Ø¤‰êÒ1
-G	java:S106["+Replace this use of System.out by a logger.(»Ñ¶8Ù¤‰êÒ1
-L	java:S106h"+Replace this use of System.out by a logger.(û¶Ôøÿÿÿÿ8Ú¤‰êÒ1
-G	java:S106n"+Replace this use of System.out by a logger.(ö¶ñÃ8Û¤‰êÒ1
-G	java:S106r"+Replace this use of System.out by a logger.(Ş”í8Û¤‰êÒ1
-G	java:S106s"+Replace this use of System.out by a logger.(Ø“ïû8Û¤‰êÒ1
+p
+java:S1192"NDefine a constant instead of duplicating this literal "CERTIFICATION" 3 times.(Å³¨úÿÿÿÿ8ŠË®ŒÓ1
+j
+java:S2184"HCast one of the operands of this multiplication operation to a "double".(ìÓñ¢ÿÿÿÿÿ8Ë®ŒÓ1
+e
+java:S2184"HCast one of the operands of this multiplication operation to a "double".(Ğ»Èª8Ë®ŒÓ1
+e
+java:S2184"HCast one of the operands of this multiplication operation to a "double".(Ò–ªã8’Ë®ŒÓ1
+V
+java:S34008"9Remove this method and declare a constant for this value.(”·³›8•Ì®ŒÓ1
+>	java:S131N""Add a default case to this switch.(íÕ„¾8ŸÌ®ŒÓ1
+G	java:S106f"+Replace this use of System.out by a logger.(·‘³¥8¡Ì®ŒÓ1
+L	java:S106g"+Replace this use of System.out by a logger.(ãĞ¹‹ùÿÿÿÿ8¢Ì®ŒÓ1
+G	java:S106h"+Replace this use of System.out by a logger.(ìŒÍ8£Ì®ŒÓ1
+G	java:S106i"+Replace this use of System.out by a logger.(¡‰½É8¤Ì®ŒÓ1
+L	java:S106j"+Replace this use of System.out by a logger.(‡ĞÃÁüÿÿÿÿ8§Ì®ŒÓ1
+L	java:S106k"+Replace this use of System.out by a logger.(™·¬şÿÿÿÿ8«Ì®ŒÓ1
+G	java:S106r"+Replace this use of System.out by a logger.(Ûã8®Ì®ŒÓ1
+>	java:S131|""Add a default case to this switch.(Œ‰Éù8şÌ®ŒÓ1
+F
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8œñ®ŒÓ1
+\
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8ñ®ŒÓ1
+C
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8ñ®ŒÓ1
