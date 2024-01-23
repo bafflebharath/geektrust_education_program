@@ -1,0 +1,35 @@
+
+e
+java:S2184J"HCast one of the operands of this multiplication operation to a "double".(û³§“8¡¨ùµÓ1
+e
+java:S2184L"HCast one of the operands of this multiplication operation to a "double".(ø¸æÍ8¤¨ùµÓ1
+j
+java:S2184N"HCast one of the operands of this multiplication operation to a "double".(ç‘Êúÿÿÿÿ8¥¨ùµÓ1
+\
+java:S18546"?Remove this useless assignment to local variable "isProMember".(«æŞŒ8×®ùµÓ1
+G	java:S106"+Replace this use of System.out by a logger.(¬‘Óã8‹¯ùµÓ1
+R
+java:S1481"0Remove this unused "isProMember" local variable.(ÂÔÊÛıÿÿÿÿ8“¯ùµÓ1
+L	java:S106"+Replace this use of System.out by a logger.(Ò¹×Œúÿÿÿÿ8•¯ùµÓ1
+L	java:S106"+Replace this use of System.out by a logger.(ƒ¿Öšıÿÿÿÿ8˜¯ùµÓ1
+L	java:S106"+Replace this use of System.out by a logger.(ïé¥Îûÿÿÿÿ8›¯ùµÓ1
+G	java:S106"+Replace this use of System.out by a logger.(û¥¢8œ¯ùµÓ1
+L	java:S106"+Replace this use of System.out by a logger.(ØáöÚıÿÿÿÿ8¯ùµÓ1
+G	java:S106""+Replace this use of System.out by a logger.(µ†Äë8©¯ùµÓ1
+L	java:S106)"+Replace this use of System.out by a logger.(îŞôúüÿÿÿÿ8®¯ùµÓ1
+G	java:S1063"+Replace this use of System.out by a logger.(„Øµ8´¯ùµÓ1
+G	java:S106B"+Replace this use of System.out by a logger.(˜íÕù8º¯ùµÓ1
+L	java:S106^"+Replace this use of System.out by a logger.(±äõ¼ùÿÿÿÿ8Ô¯ùµÓ1
+>	java:S131f""Add a default case to this switch.(­¾ÃÀ8Ü¯ùµÓ1
+L	java:S106s"+Replace this use of System.out by a logger.(‡ü¹Ïıÿÿÿÿ8å¯ùµÓ1
+`
+java:S1854"=Remove this useless assignment to local variable "totalCost".(ÎÿÑ°ùÿÿÿÿ8æ¯ùµÓ1
+[
+java:S1854„"=Remove this useless assignment to local variable "totalCost".(ëÈ—³8ç¯ùµÓ1
+G	java:S106y"+Replace this use of System.out by a logger.(ö¦‡·8ğ¯ùµÓ1
+G	java:S106z"+Replace this use of System.out by a logger.(ÿ©é­8÷¯ùµÓ1
+G	java:S106{"+Replace this use of System.out by a logger.(¡ğ‰Î8ø¯ùµÓ1
+L	java:S106}"+Replace this use of System.out by a logger.(ÆÔßüÿÿÿÿÿ8ù¯ùµÓ1
+G	java:S106‚"+Replace this use of System.out by a logger.(Á×û08ü¯ùµÓ1
+M	java:S106…"+Replace this use of System.out by a logger.(ñÑ”úÿÿÿÿ8ş¯ùµÓ1
+M	java:S106‡"+Replace this use of System.out by a logger.(…®¾ıÿÿÿÿ8°ùµÓ1
