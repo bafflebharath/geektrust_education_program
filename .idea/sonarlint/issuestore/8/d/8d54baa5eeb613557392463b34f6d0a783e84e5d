@@ -1,14 +1,14 @@
 
 j
-java:S1192T"HDefine a constant instead of duplicating this literal "DIPLOMA" 4 times.(›ùò‚ıÿÿÿÿ8‘ÎåÓ1
+java:S1192T"HDefine a constant instead of duplicating this literal "DIPLOMA" 4 times.(›ùò‚ıÿÿÿÿ8ÌƒæÓ1
 p
-java:S1192T"NDefine a constant instead of duplicating this literal "CERTIFICATION" 4 times.(›ùò‚ıÿÿÿÿ8‘ÎåÓ1
+java:S1192T"NDefine a constant instead of duplicating this literal "CERTIFICATION" 4 times.(›ùò‚ıÿÿÿÿ8ÌƒæÓ1
 i
-java:S1192T"GDefine a constant instead of duplicating this literal "DEGREE" 4 times.(›ùò‚ıÿÿÿÿ8‘ÎåÓ1
-M	java:S106Ô"+Replace this use of System.err by a logger.(Í“Ğ‡ûÿÿÿÿ8Šù²åÓ1
-H	java:S106¡"+Replace this use of System.out by a logger.(»îÆß8’ù²åÓ1
-H	java:S106¢"+Replace this use of System.out by a logger.(®öˆÏ8’ù²åÓ1
-G	java:S106£"+Replace this use of System.out by a logger.(±¡şP8’ù²åÓ1
-M	java:S106¤"+Replace this use of System.out by a logger.(›¦ñéùÿÿÿÿ8“ù²åÓ1
-M	java:S106¥"+Replace this use of System.out by a logger.(Ê±£ıÿÿÿÿ8“ù²åÓ1
-M	java:S106¦"+Replace this use of System.out by a logger.(½ñ¥şÿÿÿÿÿ8“ù²åÓ1
+java:S1192T"GDefine a constant instead of duplicating this literal "DEGREE" 4 times.(›ùò‚ıÿÿÿÿ8ÌƒæÓ1
+M	java:S106Ó"+Replace this use of System.err by a logger.(Í“Ğ‡ûÿÿÿÿ8âƒæÓ1
+H	java:S106Ÿ"+Replace this use of System.out by a logger.(»îÆß8æƒæÓ1
+H	java:S106 "+Replace this use of System.out by a logger.(®öˆÏ8æƒæÓ1
+G	java:S106¡"+Replace this use of System.out by a logger.(±¡şP8æƒæÓ1
+M	java:S106¢"+Replace this use of System.out by a logger.(›¦ñéùÿÿÿÿ8æƒæÓ1
+M	java:S106£"+Replace this use of System.out by a logger.(Ê±£ıÿÿÿÿ8æƒæÓ1
+M	java:S106¤"+Replace this use of System.out by a logger.(½ñ¥şÿÿÿÿÿ8æƒæÓ1

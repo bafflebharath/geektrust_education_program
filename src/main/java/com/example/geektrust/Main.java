@@ -206,7 +206,6 @@ class Programme {
 
 public class Main {
     private static int count = 0;
-    private static boolean discountFlag = false;
     public static void main(String[] args) {
         if (args.length != 1) {
             System.err.println("Usage: java Main <inputFilePath>");
@@ -249,10 +248,9 @@ public class Main {
                 }
                 break;
             case "APPLY_COUPON":
-                if (count>=4 && tokens.length == 2) {
+                if (cart.getAppliedCoupon() == null && count >= 4 && tokens.length == 2) {
                     cart.setAppliedCoupon("B4G1");
-                }else if(!discountFlag && count<4){
-                    discountFlag = true;
+                } else if (cart.getAppliedCoupon() == null) {
                     applyCoupon(cart, tokens[1]);
                 }
                 break;
