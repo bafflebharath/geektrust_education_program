@@ -1,29 +1,0 @@
-
-e
-java:S2184J"HCast one of the operands of this multiplication operation to a "double".(û³§“8ß¨„¶Ó1
-e
-java:S2184L"HCast one of the operands of this multiplication operation to a "double".(ø¸æÍ8à¨„¶Ó1
-j
-java:S2184N"HCast one of the operands of this multiplication operation to a "double".(ç‘Êúÿÿÿÿ8à¨„¶Ó1
-G	java:S106"+Replace this use of System.out by a logger.(¬‘Óã8«„¶Ó1
-L	java:S106"+Replace this use of System.out by a logger.(Ò¹×Œúÿÿÿÿ8„«„¶Ó1
-L	java:S106"+Replace this use of System.out by a logger.(ƒ¿Öšıÿÿÿÿ8…«„¶Ó1
-L	java:S106"+Replace this use of System.out by a logger.(ïé¥Îûÿÿÿÿ8…«„¶Ó1
-G	java:S106"+Replace this use of System.out by a logger.(û¥¢8…«„¶Ó1
-L	java:S106"+Replace this use of System.out by a logger.(ØáöÚıÿÿÿÿ8…«„¶Ó1
-G	java:S106$"+Replace this use of System.out by a logger.(µ†Äë8†«„¶Ó1
-L	java:S106+"+Replace this use of System.out by a logger.(îŞôúüÿÿÿÿ8ˆ«„¶Ó1
-G	java:S1065"+Replace this use of System.out by a logger.(„Øµ8‰«„¶Ó1
-]	java:S125D"<This block of commented-out lines of code should be removed.(Õè†–ıÿÿÿÿ8‹«„¶Ó1
-L	java:S106`"+Replace this use of System.out by a logger.(±äõ¼ùÿÿÿÿ8º«„¶Ó1
-L	java:S106d"+Replace this use of System.out by a logger.(½ƒ´àşÿÿÿÿ8½«„¶Ó1
->	java:S131p""Add a default case to this switch.(íÕ„¾8À«„¶Ó1
-M	java:S106€"+Replace this use of System.out by a logger.(‡ü¹Ïıÿÿÿÿ8Á«„¶Ó1
-H	java:S106ˆ"+Replace this use of System.out by a logger.(ö¦‡·8Ã«„¶Ó1
-H	java:S106‰"+Replace this use of System.out by a logger.(ÿ©é­8Ã«„¶Ó1
-H	java:S106Š"+Replace this use of System.out by a logger.(¡ğ‰Î8Ä«„¶Ó1
-M	java:S106Œ"+Replace this use of System.out by a logger.(ÆÔßüÿÿÿÿÿ8Ä«„¶Ó1
-G	java:S106“"+Replace this use of System.out by a logger.(Á×û08Å«„¶Ó1
-M	java:S106–"+Replace this use of System.out by a logger.(ñÑ”úÿÿÿÿ8Æ«„¶Ó1
-M	java:S106˜"+Replace this use of System.out by a logger.(…®¾ıÿÿÿÿ8Æ«„¶Ó1
-M	java:S106"+Replace this use of System.out by a logger.(å«ôáûÿÿÿÿ8Ç«„¶Ó1

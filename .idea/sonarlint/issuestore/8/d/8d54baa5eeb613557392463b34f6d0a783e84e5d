@@ -1,23 +1,24 @@
 
-e
-java:S1192?"HDefine a constant instead of duplicating this literal "DIPLOMA" 3 times.(¢î¼Ü8ÍñÇºÓ1
-k
-java:S1192?"NDefine a constant instead of duplicating this literal "CERTIFICATION" 3 times.(¢î¼Ü8ÍñÇºÓ1
-d
-java:S1192?"GDefine a constant instead of duplicating this literal "DEGREE" 3 times.(¢î¼Ü8ÍñÇºÓ1
-]
-java:S2184@"@Cast one of the operands of this integer division to a "double".(»Ğ†«8ÏñÇºÓ1
-e
-java:S2184s"HCast one of the operands of this multiplication operation to a "double".(î„‡8ÏñÇºÓ1
-e
-java:S2184u"HCast one of the operands of this multiplication operation to a "double".(Áê§8ÏñÇºÓ1
-e
-java:S2184w"HCast one of the operands of this multiplication operation to a "double".(Ûªğá8ÏñÇºÓ1
-L	java:S106]"+Replace this use of System.out by a logger.(ÃßÙ·ùÿÿÿÿ8òñÇºÓ1
-M	java:S106"+Replace this use of System.err by a logger.(Ÿİ«Íşÿÿÿÿ8öñÇºÓ1
-M	java:S106Ø"+Replace this use of System.out by a logger.(½Çö‰úÿÿÿÿ8ıñÇºÓ1
-H	java:S106Ù"+Replace this use of System.out by a logger.(íÂ¸®8ıñÇºÓ1
-H	java:S106Ú"+Replace this use of System.out by a logger.(®öˆÏ8şñÇºÓ1
-H	java:S106Û"+Replace this use of System.out by a logger.(§ñÍÂ8şñÇºÓ1
-H	java:S106Ü"+Replace this use of System.out by a logger.(öú£8şñÇºÓ1
-G	java:S106İ"+Replace this use of System.out by a logger.(Œ÷§p8şñÇºÓ1
+j
+java:S1192t"HDefine a constant instead of duplicating this literal "DIPLOMA" 3 times.(›ùò‚ıÿÿÿÿ8ò¦ãÓ1
+p
+java:S1192t"NDefine a constant instead of duplicating this literal "CERTIFICATION" 3 times.(›ùò‚ıÿÿÿÿ8ò¦ãÓ1
+i
+java:S1192t"GDefine a constant instead of duplicating this literal "DEGREE" 3 times.(›ùò‚ıÿÿÿÿ8ò¦ãÓ1
+f
+java:S2184¦"HCast one of the operands of this multiplication operation to a "double".(î„‡8ô¦ãÓ1
+f
+java:S2184¨"HCast one of the operands of this multiplication operation to a "double".(Áê§8ô¦ãÓ1
+f
+java:S2184ª"HCast one of the operands of this multiplication operation to a "double".(Ûªğá8ô¦ãÓ1
+u
+java:S1450"XRemove the "totalFare" field and declare it as a local variable in the relevant methods.(Ğé÷Ü8†Ÿ¦ãÓ1
+M	java:S106Â"+Replace this use of System.err by a logger.(Ÿİ«Íşÿÿÿÿ8Ÿ¦ãÓ1
+J
+java:S1172ˆ"-Remove this unused method parameter "coupon".(ğÜœi8íîµãÓ1
+H	java:S106"+Replace this use of System.out by a logger.(»îÆß8“Ÿ¦ãÓ1
+M	java:S106"+Replace this use of System.out by a logger.(¼ÅÇ÷şÿÿÿÿ8“Ÿ¦ãÓ1
+H	java:S106‘"+Replace this use of System.out by a logger.(®öˆÏ8“Ÿ¦ãÓ1
+G	java:S106’"+Replace this use of System.out by a logger.(±¡şP8”Ÿ¦ãÓ1
+M	java:S106“"+Replace this use of System.out by a logger.(›¦ñéùÿÿÿÿ8÷™ÓãÓ1
+M	java:S106”"+Replace this use of System.out by a logger.(½ñ¥şÿÿÿÿÿ8ŒÖÓãÓ1

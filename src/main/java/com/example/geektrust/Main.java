@@ -12,6 +12,27 @@ class GeekdemyCart {
     private DiscountStrategy discountStrategy;
     private EnrollmentStrategy enrollmentStrategy;
     private ProMembershipStrategy proMembershipStrategy;
+    private double proMembershipFee;
+
+    private double subtotal;
+
+    private double discount;
+
+    private double enrollmentFee;
+
+    private double proMembershipDiscount;
+
+    private String appliedCoupon;
+
+    private double totalFare;
+
+    public String getAppliedCoupon() {
+        return appliedCoupon;
+    }
+
+    public void setAppliedCoupon(String coupon) {
+        this.appliedCoupon = coupon;
+    }
 
     public void setDiscountStrategy(DiscountStrategy discountStrategy) {
         this.discountStrategy = discountStrategy;
@@ -25,21 +46,43 @@ class GeekdemyCart {
         this.proMembershipStrategy = proMembershipStrategy;
     }
 
+    public void addProMembershipFee() {
+        this.proMembershipFee = 200;
+    }
+
+    public double getProMembershipFee() {
+        return proMembershipFee;
+    }
+
     public void addProgramme(Programme programme) {
         programmes.add(programme);
     }
 
-    public double calculateTotalCost() {
-        double subtotal = programmes.stream().mapToDouble(Programme::getCost).sum();
-        double proMembershipDiscount = proMembershipStrategy.calculateDiscount(programmes);
-        double discount = discountStrategy.calculateDiscount(programmes);
-        double enrollmentFee = enrollmentStrategy.calculateEnrollmentFee(subtotal - discount);
-
-        return subtotal - discount - proMembershipDiscount + enrollmentFee;
+    public double calculateSubtotal() {
+        subtotal = programmes.stream().mapToDouble(Programme::getCost).sum();
+        return subtotal;
     }
 
     public double calculateProMembershipDiscount() {
-        return proMembershipStrategy.calculateDiscount(programmes);
+        if(proMembershipFee>0){
+            proMembershipDiscount = proMembershipStrategy.calculateDiscount(programmes);
+        }
+        return proMembershipDiscount;
+    }
+
+    public double calculateDiscount() {
+        discount = discountStrategy.calculateDiscount(programmes);
+        return discount;
+    }
+
+    public double calculateEnrollmentFee() {
+        enrollmentFee = enrollmentStrategy.calculateEnrollmentFee(subtotal);
+        return enrollmentFee;
+    }
+
+    public double calculateTotalFare() {
+        totalFare = subtotal + enrollmentFee + proMembershipFee - proMembershipDiscount - discount;
+        return totalFare;
     }
 }
 
@@ -60,8 +103,17 @@ interface ProMembershipStrategy {
 class B4G1Discount implements DiscountStrategy {
     @Override
     public double calculateDiscount(List<Programme> programmes) {
-        long count = programmes.stream().filter(p -> p.getType().equals("CERTIFICATION") || p.getType().equals("DEGREE") || p.getType().equals("DIPLOMA")).count();
-        return count / 4 * programmes.stream().mapToDouble(Programme::getCost).min().orElse(0);
+        if (programmes.size() >= 5) {
+            return programmes.stream()
+                    .filter(p -> isDiscountableProgramme(p.getType()))
+                    .mapToDouble(Programme::getCost)
+                    .min()
+                    .orElse(0);
+        }
+        return 0;
+    }
+    private boolean isDiscountableProgramme(String type) {
+        return type.equals("CERTIFICATION") || type.equals("DEGREE") || type.equals("DIPLOMA");
     }
 }
 
@@ -90,7 +142,6 @@ class DefaultEnrollmentStrategy implements EnrollmentStrategy {
 class ProMembershipDiscount implements ProMembershipStrategy {
     @Override
     public double calculateDiscount(List<Programme> programmes) {
-        System.out.println("ProMembershipDiscount calculateDiscount");
         return programmes.stream().mapToDouble(p -> p.getDiscountRate() * p.getCost()).sum();
     }
 }
@@ -137,6 +188,7 @@ class Programme {
 }
 
 public class Main {
+    private static int count = 0;
     public static void main(String[] args) {
         if (args.length != 1) {
             System.err.println("Usage: java GeekdemyApp <inputFilePath>");
@@ -149,6 +201,8 @@ public class Main {
         cart.setDiscountStrategy(new B4G1Discount()); // Default discount strategy
         cart.setEnrollmentStrategy(new DefaultEnrollmentStrategy()); // Default enrollment strategy
         cart.setProMembershipStrategy(new ProMembershipDiscount()); // Default pro membership strategy
+
+
 
         try (BufferedReader br = new BufferedReader(new FileReader(inputFilePath))) {
             String line;
@@ -167,16 +221,20 @@ public class Main {
         switch (tokens[0]) {
             case "ADD_PROGRAMME":
                 if (tokens.length == 3) {
+                    count +=Integer.parseInt(tokens[2]);
                     cart.addProgramme(new Programme(tokens[1], Integer.parseInt(tokens[2])));
                 }
                 break;
             case "PRO_MEMBERSHIP":
-                if (tokens.length == 2) {
+                if (tokens.length == 2 && tokens[1].equalsIgnoreCase("Y")) {
                     applyProMembershipCoupon(cart, tokens[1]);
                 }
                 break;
             case "APPLY_COUPON":
-                if (tokens.length == 2) {
+                if (count>=4 && tokens.length == 2) {
+                    cart.setDiscountStrategy(new B4G1Discount());
+                    cart.setAppliedCoupon("B4G1");
+                }else{
                     applyCoupon(cart, tokens[1]);
                 }
                 break;
@@ -190,14 +248,13 @@ public class Main {
 
     private static void applyCoupon(GeekdemyCart cart, String coupon) {
         switch (coupon.toLowerCase()) {
-            case "b4g1":
-                cart.setDiscountStrategy(new B4G1Discount());
-                break;
             case "deal_g20":
                 cart.setDiscountStrategy(new DealG20Discount());
+                cart.setAppliedCoupon("Deal_G20");
                 break;
             case "deal_g5":
                 cart.setDiscountStrategy(new DealG5Discount());
+                cart.setAppliedCoupon("DEAL_G5");
                 break;
             default:
                 break;
@@ -205,19 +262,17 @@ public class Main {
     }
 
     private static void applyProMembershipCoupon(GeekdemyCart cart, String coupon) {
-        if (coupon.equalsIgnoreCase("Y")) {
+            cart.calculateProMembershipDiscount();
             cart.setProMembershipStrategy(new ProMembershipDiscount());
-        }
+            cart.addProMembershipFee(); // Add the Pro Membership fee
     }
 
     private static void printBill(GeekdemyCart cart) {
-        double subtotal = cart.calculateTotalCost();
-
-        System.out.printf("SUB_TOTAL  %.2f%n", subtotal);
-        System.out.printf("COUPON_DISCOUNT   %s    %.2f%n", "B4G1", cart.calculateTotalCost() - subtotal);
+        System.out.printf("SUB_TOTAL  %.2f%n", cart.calculateSubtotal());
+        System.out.printf("COUPON_DISCOUNT   %s    %.2f%n", cart.getAppliedCoupon(), cart.calculateDiscount());
         System.out.printf("TOTAL_PRO_DISCOUNT   %.2f%n", cart.calculateProMembershipDiscount());
-        System.out.printf("PRO_MEMBERSHIP_FEE   %.2f%n", 0.00);
-        System.out.printf("ENROLLMENT_FEE   %.2f%n", 0.00);
-        System.out.printf("TOTAL   %.2f%n", cart.calculateTotalCost());
+        System.out.printf("PRO_MEMBERSHIP_FEE   %.2f%n", cart.getProMembershipFee());
+        System.out.printf("ENROLLMENT_FEE   %.2f%n", cart.calculateEnrollmentFee());
+        System.out.printf("TOTAL   %.2f%n", cart.calculateTotalFare());
     }
 }
